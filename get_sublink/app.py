@@ -15,8 +15,8 @@ class GetSublink():
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
             'origin': self.main_domain,
         }
-        self.domain_list = ['https://suying100.xyz',
-                'https://suying300.com',
+        self.domain_list = ['https://suying999.net',
+                'https://suying810.net',
                 'https://suying400.com',
                'https://suying400.net',
                 'https://suying400.xyz',
@@ -26,6 +26,7 @@ class GetSublink():
                 'https://suying200.org',
                 'https://suying600.com',
                 'https://suying600.net',]
+
 
     def reload_main_domain(self,new_domain):
          self.main_domain = new_domain
