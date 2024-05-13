@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <style type="text/css">
 body {
@@ -13,6 +14,8 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+
 
 .btn {
     margin: 0 8px 10px 0;
@@ -65,36 +68,31 @@ body {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>芜湖机场同好会</title>
+  <title>EPicture-个人图床</title>
 </head>
 <body>
 <main>
     <div class="main">
         <h1 style="color: rgb(0, 183, 255); font-size: 3rem;">芜湖机场同好会订阅地址</h1>
-        <h3 style="color: rgb(58, 72, 97);">更新时间: {{nowtime}}</h3>
-        <div {{btnhidden}}>
-          <p><button class="btn" data-button-id="V2">复制 V2Ray 订阅链接</button></p>
-          <p><button class="btn btn-clash" data-button-id="ClashX">复制 CFW / ClashX 订阅</button></p>
-          <p><button class="btn btn-trojan" data-button-id="Trojan">复制 Trojan 订阅链接</button></p>
-          <p><button class="btn btn-ssr" data-button-id="SSR">复制 SSR 订阅链接</button></p>
-          <p><a href="https://www.evileyesaint.com/index.php/fly2024.html" class="btn">软件下载</a></p>
+        <h3 style="color: rgb(58, 72, 97);">更新时间:</h3>
 
-        </div>
-        <h2>{{msgboards}}</h2>
+
+        <p><button class="btn" data-button-id="V2">复制 V2Ray 订阅链接</button></p>
+        <p><button class="btn btn-clash" data-button-id="ClashX">复制 CFW / ClashX 订阅</button></p>
+        <p><button class="btn btn-trojan" data-button-id="Trojan">复制 Trojan 订阅链接</button></p>
+        <p><button class="btn btn-ssr" data-button-id="SSR">复制 SSR 订阅链接</button></p>
+
     </div>
 </main>
 </body>
-<script type="text/javascript">
-var sublink = '{{sublink}}' 
-function copyTextToClipboard(text) {
-    var textArea = document.createElement("textarea");
-    textArea.value = text;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-}
 
+<!-- js -->
+
+<script type="text/javascript">
+
+
+var sublink = 'https://s.suying666.info/link/RW8roea0nvSemBCT' 
+var sublink = 'https://s.suying666.info/link/RW8roea0nvSemBCT' 
 var buttons = document.querySelectorAll('button');
     // 添加事件监听器
     buttons.forEach(function(button) {
@@ -102,24 +100,26 @@ var buttons = document.querySelectorAll('button');
             var buttonId = event.currentTarget.getAttribute('data-button-id');
             switch (buttonId) {
                 case 'V2':
-                    copyTextToClipboard(sublink+'?sub=3')
+                    navigator.clipboard.writeText(sublink+'?sub=3')
                     alert(sublink+'?sub=3'+'\n复制成功')
                     break;
                 case 'ClashX':
-                    copyTextToClipboard(sublink+'?clash=1')
+                    navigator.clipboard.writeText(sublink+'?clash=1')
                     alert(sublink+'?clash=1'+'\n复制成功')
                     break;
                 case 'Trojan':
-                    copyTextToClipboard(sublink+'?trojan=1')
+                    navigator.clipboard.writeText(sublink+'?trojan=1')
                     alert(sublink+'?trojan=1'+'\n复制成功')
                     break;
                 case 'SSR':
-                    copyTextToClipboard(sublink+'?sub=1')
+                    navigator.clipboard.writeText(sublink+'?sub=1')
                     alert(sublink+'?sub=1'+'\n复制成功')
                     break;
             }
         });
     });
+
+
 </script>
 </html>
 
